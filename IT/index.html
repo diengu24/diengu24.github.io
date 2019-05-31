@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE>Vietnamese Kitchen | Home</TITLE>
+<META name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<STYLE type= 'text/css'>
+body {
+  font-family: 'Avenir';
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 16px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .subnav:hover .subnavbtn {
+  background-color: #FAC822;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #FAC822;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #FAC822;
+  color: #FE015E;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+#square1 {
+      width: 100%;
+      height: 55%;
+      background: #D9D2D2;
+      position: absolute;
+      left: 0px;
+      top: 60px;
+      z-index: -10;
+
+    }
+#food {
+  width: 470px;
+  position: absolute;
+  top: 15%;
+  left:32.7%;
+}
+#table {
+  margin-left:45%;
+  margin-top: 25%;
+  z-index: 5; 
+}
+#recipes {
+	color: #0C0C0C;
+	font-size: 40px;
+	font-family: Avenir;
+	position: absolute;
+	margin-top: .2%;
+	margin-left: 1%;
+}
+#dish {
+	margin-top: 40px;
+	margin-left: 30px;
+}
+#drink {
+	margin-top: 40px;
+	margin-left: 60px;
+}
+#dessert {
+	margin-top: 40px;
+	margin-left: 60px;
+}
+#other {
+	margin-top: 40px;
+	margin-left: 60px;
+}
+#reason {
+	color: #FE015E;
+	font-size: 30px;
+	font-family: Avenir;
+	position: absolute;
+	top: 434px;
+	left: 10px;
+	text-align: center;
+}
+#rightarrow {
+	top: 240px;
+	left: 930px;
+	position: absolute;
+	width: 50px;
+}
+#leftarrow {
+	top: 240px;
+	left: 430px;
+	position: absolute;
+	width: 50px;
+}
+</STYLE>
+</HEAD>
+<BODY>
+
+<DIV class="navbar">
+  <A href="index.html"><IMG src="VK.png" height=35.714285714px widht=50px></IMG></A>
+  <DIV class="subnav">
+    <BUTTON class="subnavbtn">Drinks </BUTTON>
+    <DIV class="subnav-content">
+      <A href="Tra Da.html">Tra Da </A>
+      <A href="SodaChanhDuong.html">Soda Chanh Duong</A>
+      <A href="Chanhmuoi.html">Chanh Muoi</A>
+      <A href="CaPheSuaDa.html">Ca Phe Sua Da</A>
+    </DIV>
+  </DIV> 
+  <DIV class="subnav">
+    <BUTTON class="subnavbtn">Dishes </I></BUTTON>
+    <DIV class="subnav-content">
+      <A href="GoiCuon.html">Goi Cuon</A>
+      <A href="ChaGio.html">Cha Gio</A>
+      <A href="BanhXeo.html">Banh Xeo</A>
+      <A href="TrungChien.html">Trung Chien</A>
+      <A href="XaLachTrong.html">Xa Lach Tron</A>
+      <A href="CanhChua.html">Canh Chua</A>
+    </DIV>
+  </DIV> 
+  <DIV class="subnav">
+    <BUTTON class="subnavbtn">Desserts </BUTTON>
+    <DIV class="subnav-content">
+      <A href="CheBap.html">Che Bap</A>
+      <A href="DauHuNuocDuong.html">Dau Hu Nuoc Duong</A>
+    </DIV>
+  </DIV>
+</DIV>
+
+<DIV style="padding:0 16px">
+</DIV>
+
+<DIV id='square1'> </DIV>
+
+<IMG src='ca_phe_sua_da.jpg' id='food'> </IMG>
+<TABLE border=0 id='table'>
+  <TR>
+   <TD> <IMG width='18px' name='button1' src='yellowbutton.png'onclick="src='yellowbutton.png'; button2.src='blackbutton.png'; button3.src='blackbutton.png'; button4.src='blackbutton.png'; button5.src='blackbutton.png'; food.src='ca_phe_sua_da.jpg';selected=0"> </IMG></TD>
+    <TD> <IMG width='18px' name='button2' src='blackbutton.png'onclick="src='yellowbutton.png'; button1.src='blackbutton.png';button3.src='blackbutton.png';button4.src='blackbutton.png';button5.src='blackbutton.png';food.src='canh_chua.jpg'; selected=1"></IMG></TD>
+    <TD> <IMG width='18' name='button3'src='blackbutton.png'onclick="src='yellowbutton.png'; button1.src='blackbutton.png';button2.src='blackbutton.png';button4.src='blackbutton.png';button5.src='blackbutton.png';food.src='che_bap.jpg'; selected=2"></IMG></TD>
+    <TD> <IMG width='18' name='button4'src='blackbutton.png'onclick="src='yellowbutton.png'; button1.src='blackbutton.png';button2.src='blackbutton.png';button3.src='blackbutton.png';button5.src='blackbutton.png';food.src='dau_hu.jpg'; selected=3"></IMG></TD>
+    <TD> <IMG width='18' name='button5'src='blackbutton.png'onclick="src='yellowbutton.png'; button1.src='blackbutton.png';button2.src='blackbutton.png';button3.src='blackbutton.png';button4.src='blackbutton.png';food.src='banh_xeo.jpeg'; selected=4"></IMG></TD>
+  </TR>
+</TABLE>
+<IMG src='arrowright.png' id='rightarrow' onclick="
+		selected=selected+1; 
+		if (selected>4)selected=0;
+			
+		if(selected==0)
+			{
+				button1.src='yellowbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='ca_phe_sua_da.jpg';
+			}
+		else if(selected==1)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='yellowbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='canh_chua.jpg';
+			}
+		else if(selected==2)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='yellowbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='che_bap.jpg';
+			}
+		else if(selected==3)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='yellowbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='dau_hu.jpg';
+			}
+		else{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='yellowbutton.png'; 
+				food.src='banh_xeo.jpeg';
+		}
+			"> 
+		
+
+</IMG>
+	
+<IMG src='arrowleft.png' id='leftarrow' onclick="
+		selected=selected-1; 
+		if (selected<0)selected=4;
+
+		if(selected==0)
+			{
+				button1.src='yellowbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='ca_phe_sua_da.jpg';
+			}
+		else if(selected==1)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='yellowbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='canh_chua.jpg';
+			}
+		else if(selected==2)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='yellowbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='che_bap.jpg';
+			}
+		else if(selected==3)
+			{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='yellowbutton.png'; 
+				button5.src='blackbutton.png'; 
+				food.src='dau_hu.jpg';
+			}
+		else{
+				button1.src='blackbutton.png'; 
+				button2.src='blackbutton.png'; 
+				button3.src='blackbutton.png'; 
+				button4.src='blackbutton.png'; 
+				button5.src='yellowbutton.png'; 
+				food.src='banh_xeo.jpeg';
+		}
+		"> 
+</IMG>
+<BR></BR>
+
+<SPAN id='reason'> <BR></BR>I decided to make this website because I want to bring to justice to the overlooked Vietnamese dishes, drinks, and desserts. I also think that home recipes are much better than other recipes that you will find online, which is why the recipes on the website are all ones that I have grown up eating. My hope is for everyone to be able to cook and enjoy ALL Vietnamese food. <BR></BR></SPAN>
+
+<SCRIPT>
+	var selected=0;
+</SCRIPT>
+
+
+</BODY>
+</HTML>
